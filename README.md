@@ -232,6 +232,27 @@ Copy/paste the table into the README file below this line.
 
 <!-- add the table here -->
 
+| length of xs | timsort runtime | merge_sorted runtime | quick_sorted runtime |
+| --- | --- | --- | --- |
+| len(xs)=2**0 | 4.284E-06 | 3.364E-06 | 2.813E-06 |
+| len(xs)=2**1 | 2.567E-06 | 1.008E-05 | 1.094E-05 |
+| len(xs)=2**2 | 2.485E-06 | 1.759E-05 | 1.759E-05 |
+| len(xs)=2**3 | 2.753E-06 | 3.518E-05 | 3.234E-05 |
+| len(xs)=2**4 | 3.148E-06 | 7.471E-05 | 6.671E-05 |
+| len(xs)=2**5 | 3.751E-06 | 1.563E-04 | 1.484E-04 |
+| len(xs)=2**6 | 4.839E-06 | 3.545E-04 | 3.301E-04 |
+| len(xs)=2**7 | 6.989E-06 | 7.531E-04 | 7.415E-04 |
+| len(xs)=2**8 | 1.053E-05 | 1.643E-03 | 1.596E-03 |
+| len(xs)=2**9 | 2.148E-05 | 3.626E-03 | 3.666E-03 |
+| len(xs)=2**10 | 3.964E-05 | 7.842E-03 | 8.104E-03 |
+| len(xs)=2**11 | 8.102E-05 | 1.688E-02 | 1.759E-02 |
+| len(xs)=2**12 | 1.608E-04 | 4.022E-02 | 3.819E-02 |
+| len(xs)=2**13 | 3.035E-04 | 7.713E-02 | 8.283E-02 |
+| len(xs)=2**14 | 6.513E-04 | 1.694E-01 | 1.770E-01 |
+| len(xs)=2**15 | 1.139E-03 | 3.456E-01 | 3.721E-01 |
+| len(xs)=2**16 | 2.532E-03 | 6.105E-01 | 8.170E-01 |
+
+
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
 This is because TimSort is designed to not have to resort already sorted data,
